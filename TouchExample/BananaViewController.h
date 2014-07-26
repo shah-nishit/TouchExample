@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface BananaViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *XAxis;
+@property (weak, nonatomic) IBOutlet UILabel *YAxis;
 
 @end

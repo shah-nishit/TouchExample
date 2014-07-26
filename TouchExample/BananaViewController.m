@@ -26,4 +26,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch* t = touches.anyObject;
+     CGPoint loc = [t locationInView: self.view];
+    self.XAxis.text= [@"X:" stringByAppendingString:[[NSNumber numberWithFloat: loc.x] stringValue]];
+    
+    self.YAxis.text= [@"Y:" stringByAppendingString:[[NSNumber numberWithFloat: loc.y] stringValue]];
+}
+			
 @end
